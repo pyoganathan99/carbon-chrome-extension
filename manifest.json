@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Disable Ligatures on carbon.now.sh",
+    "version": "1.0",
+    "description": "Disables font-variant ligatures on carbon.now.sh",
+    "content_scripts": [
+        {
+            "css": [
+                "styles/main.css"
+            ],
+            "matches": [
+                "https://carbon.now.sh/*"
+            ]
+        }
+    ]
+}
